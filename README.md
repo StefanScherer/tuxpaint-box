@@ -17,7 +17,7 @@ Log into the newly created Ubuntu 14.04 desktop box, the password is `vagrant` (
 
 Have fun!
 
-## Saved images
+## Save your kids images
 After I have done a `vagrant destroy -f` one evening and received complains that the paintings from yesterday have been lost, I improved the provisioning. The tux paint folder will be created in the shared folder, so the saved pictures are stored on the host machine in the folder `saved`.
 
 So it is save to do a `vagrant destory -f` to save disk space and do a `vagrant up` if the tux painter will be needed again.
@@ -27,6 +27,7 @@ So it is save to do a `vagrant destory -f` to save disk space and do a `vagrant 
 * I have to pin the Tux Paint icon to the dock, so it will be easier for kids to start the paint program.
 
 ## Next steps
-Perhaps I try this in a Dockerfile as well in the future.
+* Perhaps I try this in a Dockerfile as well in the future.
+* Or at least I should add some [serverspec](http://serverspec.org) tests if provisioning worked fine.
 
 # MIT License
