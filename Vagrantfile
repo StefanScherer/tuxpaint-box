@@ -13,7 +13,7 @@ fi
 
 if [ ! -d /home/vagrant/.tuxpaint ]; then
   sudo -u vagrant mkdir -p /home/vagrant/.tuxpaint
-  sudo -u vagrant ln -s /vagrant/saed /home/vagrant/.tuxpaint/saved
+  sudo -u vagrant ln -s /vagrant/saved /home/vagrant/.tuxpaint/saved
 fi
 SCRIPT
 
