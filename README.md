@@ -1,10 +1,10 @@
 # tuxpaint-box
-This is a small fun project I made for my five year old daughter. She loves Tux Paint, a very simple paint program. After using my other Linux boxes for that, I created a Vagrantfile to give her an own Ubuntu box with just that application in it.
+This is a small fun project I made for my six year old daughter. She loves Tux Paint, a very simple paint program. After using my other Linux boxes for that, I created a Vagrantfile to give her an own Ubuntu box with just that application in it.
 
 ![tux paint](pics/tuxpaint.png)
 
 ## Create the box
-The box is tested with VMware Fusion, but should work with VMware Workstation as well. VirtualBox should alsow work. The base box is retrieved from the Vagrant Cloud, so you only need Vagrant and one of the hypervisors.
+The box is tested with VMware Fusion, but should work with VMware Workstation as well. VirtualBox should also work, but without sound at the moment. The base box is retrieved from the Vagrant Cloud, so you only need Vagrant and one of the hypervisors.
 
 ```bash
 git clone https://github.com/StefanScherer/tuxpaint-box
@@ -17,7 +17,7 @@ Log into the newly created Ubuntu 14.04 desktop box, the password is `vagrant` (
 
 Have fun!
 
-Enjoy the sounds (in stereo) while painting (I have added the vmx keys to enable the sound card in the box).
+Enjoy the sounds (in stereo) while painting (VMware only).
 
 ## Save your kids images
 After I have done a `vagrant destroy -f` one evening and received complains that the paintings from yesterday have been lost, I improved the provisioning. The tux paint folder will be created in the shared folder, so the saved pictures are stored on the host machine in the folder `saved`.
